@@ -1,0 +1,31 @@
+{
+  "name": "hexo-plugin-gitalk",
+  "version": "0.0.3",
+  "description": "Hexo 整合 gitalk 插件实现评论功能",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snowdreams1006/hexo-plugin-gitalk.git"
+  },
+  "keywords": [
+    "hexo-plugin-gitalk",
+    "gitbook-plugin-mygitalk",
+    "mygitalk",
+    "gitalk",
+    "gitment",
+    "discuss",
+    "comment",
+    "issues",
+    "github",
+    "gitbook"
+  ],
+  "author": {
+    "name": "snowdreams1006",
+    "email": "snowdreams1006@163.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snowdreams1006/hexo-plugin-gitalk/issues"
+  },
+  "homepage": "https://snowdreams1006.github.io/hexo-plugin-gitalk/"
+}

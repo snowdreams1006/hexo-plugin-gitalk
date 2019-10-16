@@ -1,6 +1,6 @@
 {
   "name": "hexo-plugin-gitalk",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Hexo 整合 gitalk 插件实现评论功能",
   "main": "index.js",
   "repository": {

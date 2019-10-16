@@ -1,6 +1,6 @@
 ---
 title: 首页
-date: 2019-10-11 11:47:52
+date: 2019-10-16 01:47:52
 tags:
 ---
 
@@ -45,110 +45,18 @@ plugins:
 其中,配置参数含义如下: 
 
 - **clientID** `String` 
-
   **必须**. GitHub Application Client ID.
-
 - **clientSecret** `String` 
-
   **必须**. GitHub Application Client Secret.
-
 - **repo** `String` 
-
   **必须**. GitHub repository.
-
 - **owner** `String` 
-
-  **必须**. GitHub repository 所有者，可以是个人或者组织。
-
+  **必须**. GitHub repository 所有者,可以是个人或者组织.
 - **admin** `Array` 
-
-  **必须**. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
-
-- **id** `String` 
-  
-  Default: `location.href`.
-
-  页面的唯一标识。长度必须小于50。
-  
-- **number** `Number` 
-  
-  Default: `-1`.
-
-  页面的 issue ID 标识，若未定义`number`属性则会使用`id`进行定位。
-
-- **labels** `Array` 
-  
-  Default: `['Gitalk']`.
-
-  GitHub issue 的标签。
-
-- **title** `String` 
-  
-  Default: `document.title`.
-
-  GitHub issue 的标题。
-
-- **body** `String` 
-  
-  Default: `location.href + header.meta[description]`.
-
-  GitHub issue 的内容。
-
-- **language** `String` 
-  
-  Default: `navigator.language || navigator.userLanguage`.
-
-  设置语言，支持 [en, zh-CN, zh-TW]。
-
-- **perPage** `Number` 
-  
-  Default: `10`.
-
-  每次加载的数据大小，最多 100。
-
+  **必须**. GitHub repository 的所有者和合作者(对这个 repository 有写权限的用户)
 - **distractionFreeMode** `Boolean` 
-  
-  Default: false。
-
+  Default: false
   类似Facebook评论框的全屏遮罩效果.
-
-- **pagerDirection** `String`
-
-  Default: 'last'
-
-  评论排序方式， `last`为按评论创建时间倒叙，`first`为按创建时间正序。
-
-- **createIssueManually** `Boolean` 
-  
-  Default: `false`.
-
-  如果当前页面没有相应的 isssue 且登录的用户属于 admin，则会自动创建 issue。如果设置为 `true`，则显示一个初始化页面，创建 issue 需要点击 `init` 按钮。
-
-- **proxy** `String` 
-
-  Default: `https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token`.
-
-   GitHub oauth 请求到反向代理，为了支持 CORS。 [为什么要这样?](https://github.com/isaacs/github/issues/330)
-
-- **flipMoveOptions** `Object` 
-  
-  Default:
-  ```js
-    {
-      staggerDelayBy: 150,
-      appearAnimation: 'accordionVertical',
-      enterAnimation: 'accordionVertical',
-      leaveAnimation: 'accordionVertical',
-    }
-  ```
-
-  评论列表的动画。 [参考](https://github.com/joshwcomeau/react-flip-move/blob/master/documentation/enter_leave_animations.md)
-
-- **enableHotKey** `Boolean` 
-  
-  Default: `true`.
-
-  启用快捷键(cmd|ctrl + enter) 提交评论.
 
 ### Step #2 - 运行 hexo 相关命令
 

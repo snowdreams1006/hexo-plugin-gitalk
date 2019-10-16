@@ -14,13 +14,13 @@ tags:
 [![github:snodreams1006](https://img.shields.io/badge/github-snowdreams1006-brightgreen.svg)](https://github.com/snowdreams1006)
 [![微信公众号:雪之梦技术驿站-brightgreen.svg](https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7-%E9%9B%AA%E4%B9%8B%E6%A2%A6%E6%8A%80%E6%9C%AF%E9%A9%BF%E7%AB%99-brightgreen.svg)](https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg)
 
-> Hexo 整合 gitalk 插件实现评论功能
+> Hexo 整合 gitalk 组件实现博客评论功能
 
 ### 🏠 [主页](https://github.com/snowdreams1006/hexo-plugin-gitalk#readme)
 
 ## 效果
 
-![gitalk-use-preview.png](gitalk-use-preview.png)
+![gitalk-use-preview.png](https://raw.githubusercontent.com/snowdreams1006/hexo-plugin-gitalk/master/gitalk-use-preview.png)
 
 ## 用法
 
@@ -42,20 +42,32 @@ plugins:
 
 > 注意: 前往 [gitalk](https://github.com/gitalk/gitalk) 申请开通 `gitalk` 功能后,**一定要替换成自己的相关配置**!
 
-其中,配置参数含义如下: 
+其中,主要配置参数含义如下: 
 
 - **clientID** `String` 
+
   **必须**. GitHub Application Client ID.
+
 - **clientSecret** `String` 
+
   **必须**. GitHub Application Client Secret.
+
 - **repo** `String` 
+
   **必须**. GitHub repository.
+
 - **owner** `String` 
-  **必须**. GitHub repository 所有者,可以是个人或者组织.
+
+  **必须**. GitHub repository 所有者，可以是个人或者组织。
+
 - **admin** `Array` 
-  **必须**. GitHub repository 的所有者和合作者(对这个 repository 有写权限的用户)
+
+  **必须**. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
+
 - **distractionFreeMode** `Boolean` 
-  Default: false
+  
+  Default: false。
+
   类似Facebook评论框的全屏遮罩效果.
 
 ### Step #2 - 运行 hexo 相关命令
@@ -77,6 +89,8 @@ $ hexo generate
 ```bash
 $ hexo server
 ```
+
+> 注意: 本地测试时无法正常运行,必须是线上环境才会生效,且必须由管理员登录github进行初始化.
 
 ## 示例
 

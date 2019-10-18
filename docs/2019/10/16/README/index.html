@@ -165,11 +165,11 @@
 <p>This project is <a href="https://github.com/snowdreams1006/hexo-plugin-gitalk/blob/master/LICENSE" target="_blank" rel="noopener">MIT</a> licensed.</p>
 
 <div id="gitalk-container"></div>
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 		<script>
 		var gitalkConfig = {"clientID":"3f62415a283d19cbd696","clientSecret":"aed0e1db0620bf5d0e3a3f0225f801997ad74e58","repo":"hexo-plugin-gitalk","owner":"snowdreams1006","admin":["snowdreams1006"],"distractionFreeMode":false};
-	    gitalkConfig.id = location.pathname;
+	    gitalkConfig.id = md5(location.pathname);
 		var gitalk = new Gitalk(gitalkConfig);
 	    gitalk.render("gitalk-container");
 	    </script></div>
@@ -192,7 +192,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://snowdreams1006.github.io/hexo-plugin-gitalk/2019/10/16/README/" data-id="ck1tgaax70000oc18h5p1cux4" class="article-share-link">Share</a>
+      <a data-url="https://snowdreams1006.github.io/hexo-plugin-gitalk/2019/10/16/README/" data-id="ck1vlmx68000004187h7o4io1" class="article-share-link">Share</a>
       
       
     </footer>

@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: gitalk 基本示例
+subtitle: hexo-plugin-gitalk
 description:
 keywords:
-author: John Doe
-language: en
+author: 雪之梦技术驿站
+language: zh-Hans
 timezone:
 
 # URL
@@ -83,6 +83,23 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+plugins:
+  # 评论插件
+  gitalk:
+    clientID: 3f62415a283d19cbd696
+    clientSecret: aed0e1db0620bf5d0e3a3f0225f801997ad74e58
+    repo: hexo-plugin-gitalk
+    owner: snowdreams1006
+    admin: 
+      - snowdreams1006
+    distractionFreeMode: false
+  # 阅读更多插件  
+  readmore:
+    blogId: 15702-1569305559839-744
+    name: 雪之梦技术驿站
+    qrcode: https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg
+    keyword: vip
+
 ## Themes: https://hexo.io/themes/
 theme: next
 

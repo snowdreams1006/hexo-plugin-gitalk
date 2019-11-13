@@ -96,7 +96,12 @@
 <blockquote>
 <p>Hexo 整合 gitalk 组件实现博客评论功能</p>
 </blockquote>
-<h3 id="🏠-主页"><a href="#🏠-主页" class="headerlink" title="🏠 主页"></a>🏠 <a href="https://github.com/snowdreams1006/hexo-plugin-gitalk#readme" target="_blank" rel="noopener">主页</a></h3><h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="https://raw.githubusercontent.com/snowdreams1006/hexo-plugin-gitalk/master/gitalk-use-preview.png" alt="gitalk-use-preview.png"></p>
+<h3 id="🏠-主页"><a href="#🏠-主页" class="headerlink" title="🏠 主页"></a>🏠 <a href="https://github.com/snowdreams1006/hexo-plugin-gitalk#readme" target="_blank" rel="noopener">主页</a></h3><ul>
+<li>Github : <a href="https://snowdreams1006.github.io/hexo-plugin-gitalk/">https://snowdreams1006.github.io/hexo-plugin-gitalk/</a></li>
+<li>Gitee : <a href="https://snowdreams1006.gitee.io/hexo-plugin-gitalk/" target="_blank" rel="noopener">https://snowdreams1006.gitee.io/hexo-plugin-gitalk/</a></li>
+<li>Gitlab : <a href="https://snowdreams1006.gitlab.io/hexo-plugin-gitalk/" target="_blank" rel="noopener">https://snowdreams1006.gitlab.io/hexo-plugin-gitalk/</a></li>
+</ul>
+<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="https://raw.githubusercontent.com/snowdreams1006/hexo-plugin-gitalk/master/gitalk-use-preview.png" alt="gitalk-use-preview.png"></p>
 <h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><h3 id="Step-1-更新-config-yml-配置文件"><a href="#Step-1-更新-config-yml-配置文件" class="headerlink" title="Step #1 - 更新 _config.yml 配置文件"></a>Step #1 - 更新 <code>_config.yml</code> 配置文件</h3><p>在 <code>_config.yml</code> 配置文件中,配置 <code>gitalk</code> 插件相关信息,详情见 <a href="https://github.com/gitalk/gitalk" target="_blank" rel="noopener">gitalk</a>.</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">plugins:</span></span><br><span class="line">  <span class="attr">gitalk:</span></span><br><span class="line">    <span class="attr">clientID:</span> <span class="string">GitHub</span> <span class="string">Application</span> <span class="string">Client</span> <span class="string">ID</span></span><br><span class="line">    <span class="attr">clientSecret:</span> <span class="string">GitHub</span> <span class="string">Application</span> <span class="string">Client</span> <span class="string">Secret</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">GitHub</span> <span class="string">repo</span></span><br><span class="line">    <span class="attr">owner:</span> <span class="string">GitHub</span> <span class="string">repo</span> <span class="string">owner</span></span><br><span class="line">    <span class="attr">admin:</span> </span><br><span class="line">      <span class="bullet">-</span> <span class="string">GitHub</span> <span class="string">repo</span> <span class="string">owner</span> <span class="string">and</span> <span class="string">collaborators,</span> <span class="string">only</span> <span class="string">these</span> <span class="string">guys</span> <span class="string">can</span> <span class="string">initialize</span> <span class="string">github</span> <span class="string">issues</span></span><br><span class="line">    <span class="attr">distractionFreeMode:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
 
@@ -155,7 +160,16 @@
 <h2 id="支持"><a href="#支持" class="headerlink" title="支持"></a>支持</h2><p>如果本项目对你有所帮助,欢迎 ⭐️ <a href="https://github.com/snowdreams1006/hexo-plugin-gitalk" target="_blank" rel="noopener">hexo-plugin-gitalk</a> 项目,感谢你的支持与认可!</p>
 <h2 id="📝-版权"><a href="#📝-版权" class="headerlink" title="📝 版权"></a>📝 版权</h2><p>Copyright © 2019 <a href="https://github.com/snowdreams1006" target="_blank" rel="noopener">snowdreams1006</a>.</p>
 <p>This project is <a href="https://github.com/snowdreams1006/hexo-plugin-gitalk/blob/master/LICENSE" target="_blank" rel="noopener">MIT</a> licensed.</p>
-</div>
+
+<div id="gitalk-container"></div>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+		<script>
+		var gitalkConfig = {"clientID":"3f62415a283d19cbd696","clientSecret":"aed0e1db0620bf5d0e3a3f0225f801997ad74e58","repo":"hexo-plugin-gitalk","owner":"snowdreams1006","admin":["snowdreams1006"],"distractionFreeMode":false};
+	    gitalkConfig.id = md5(location.pathname);
+		var gitalk = new Gitalk(gitalkConfig);
+	    gitalk.render("gitalk-container");
+	    </script></div>
 
 			<script src="https://my.openwrite.cn/js/readmore.js" type="text/javascript"></script>
 			<script>
@@ -172,19 +186,10 @@
 			}
 			</script>
 		
-<div id="gitalk-container"></div>
-<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-		<script>
-		var gitalkConfig = {"clientID":"3f62415a283d19cbd696","clientSecret":"aed0e1db0620bf5d0e3a3f0225f801997ad74e58","repo":"hexo-plugin-gitalk","owner":"snowdreams1006","admin":["snowdreams1006"],"distractionFreeMode":false};
-	    gitalkConfig.id = md5(location.pathname);
-		var gitalk = new Gitalk(gitalkConfig);
-	    gitalk.render("gitalk-container");
-	    </script>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://snowdreams1006.github.io/hexo-plugin-gitalk/2019/10/16/README/" data-id="ck2wrhz2l0000area00wqm6sd" class="article-share-link">Share</a>
+      <a data-url="https://snowdreams1006.github.io/hexo-plugin-gitalk/2019/10/16/README/" data-id="ck2wrmj5j0000bpeadhrytsal" class="article-share-link">Share</a>
       
       
     </footer>

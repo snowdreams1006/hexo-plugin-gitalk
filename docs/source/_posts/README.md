@@ -18,6 +18,10 @@ tags:
 
 ### 🏠 [主页](https://github.com/snowdreams1006/hexo-plugin-gitalk#readme)
 
+- Github : [https://snowdreams1006.github.io/hexo-plugin-gitalk/](https://snowdreams1006.github.io/hexo-plugin-gitalk/)
+- Gitee : [https://snowdreams1006.gitee.io/hexo-plugin-gitalk/](https://snowdreams1006.gitee.io/hexo-plugin-gitalk/)
+- Gitlab : [https://snowdreams1006.gitlab.io/hexo-plugin-gitalk/](https://snowdreams1006.gitlab.io/hexo-plugin-gitalk/)
+
 ## 效果
 
 ![gitalk-use-preview.png](https://raw.githubusercontent.com/snowdreams1006/hexo-plugin-gitalk/master/gitalk-use-preview.png)
